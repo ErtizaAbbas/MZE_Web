@@ -1,0 +1,7 @@
+{
+  "liveServer.settings.root": "/",
+  "liveServer.settings.port": 5500,
+  "files.exclude": { "**/__pycache__": true },
+  "editor.formatOnSave": false,
+  "html.format.wrapLineLength": 0
+}
