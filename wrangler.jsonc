@@ -1,6 +1,5 @@
 {
-    // Cloudflare Workers (static assets) config for www.mzedigital.com
-    "name": "mze-digital",
+    "name": "mze-web",
     "compatibility_date": "2026-11-01",
     "assets": {
         "directory": "./",

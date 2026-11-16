@@ -1,4 +1,3 @@
-# Files that must NOT be published to the website (gitignore syntax)
 .git
 .github
 .vscode
