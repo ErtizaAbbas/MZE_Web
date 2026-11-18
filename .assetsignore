@@ -1,0 +1,15 @@
+# Files that must NOT be published to the website (gitignore syntax)
+.git
+.github
+.vscode
+mze-web
+.venv
+venv
+__pycache__
+build.py
+README.md
+wrangler.jsonc
+.assetsignore
+.gitignore
+.editorconfig
+*.zip

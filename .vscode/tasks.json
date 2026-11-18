@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build site",
+      "type": "shell",
+      "command": "python build.py",
+      "windows": { "command": "py build.py" },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Preview (local server on :8000)",
+      "type": "shell",
+      "command": "python -m http.server 8000",
+      "windows": { "command": "py -m http.server 8000" },
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}
