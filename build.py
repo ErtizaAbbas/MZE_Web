@@ -323,7 +323,7 @@ def project_card(p):
 # ---- People
 TEAM_LEAD = {"name": "Ertiza Abbas", "photo": "assets/img/team/ertiza-abbas.jpg", "role": "Founder & CEO"}
 DIRECTORS = [
-  {"name": "Syed Naweed Mehdi", "role": "Director & COO", "photo": "", "initials": "NM",
+  {"name": "Syed Naweed Mehdi", "role": "Director & COO", "photo": "assets/img/team/naweed-mehdi.jpg", "initials": "NM",
    "bio": "Director and Chief Operating Officer of MZE Digital. He is also CEO of Fatimaa Skills Institute, one of MZE Digital's partners in training and skills development.", "linkedin": ""},
   {"name": "Faiza Zehra", "role": "Director", "photo": "assets/img/team/faiza-zehra.jpg", "initials": "FZ",
    "bio": "Director of MZE Digital. An academic, university lecturer and senior researcher, she brings teaching and research experience to the company's training and research work.", "linkedin": ""},
