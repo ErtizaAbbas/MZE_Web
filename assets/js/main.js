@@ -55,6 +55,16 @@
         form.classList.add(ok ? "sent" : "failed");
         if (ok) form.querySelectorAll("input, textarea, select, button").forEach(function (el) { el.disabled = true; });
       }
+      var mailto = form.getAttribute("data-mailto");
+      if (!action && mailto) {
+        var f = function (n) { var el = form.querySelector("[name=" + n + "]"); return el ? el.value : ""; };
+        var subject = "Website enquiry: " + (f("interest") || "General") + " — " + f("name");
+        var body = "Name: " + f("name") + "\nCompany: " + f("company") + "\nEmail: " + f("email") +
+                   "\nPhone: " + f("phone") + "\nInterested in: " + f("interest") + "\n\n" + f("message");
+        window.location.href = "mailto:" + mailto + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        form.classList.add("sent");
+        return;
+      }
       if (!action) { done(true); return; }
       fetch(action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
         .then(function (r) { done(r.ok); })
